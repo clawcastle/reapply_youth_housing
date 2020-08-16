@@ -14,7 +14,6 @@ lazy_static! {
 async fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        println!("args {}", args.len());
         panic!("Insufficient number of arguments.");
     }
 
